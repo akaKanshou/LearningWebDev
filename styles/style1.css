@@ -1,44 +1,30 @@
 html {
-  font-size: 20px;
-  font-family: "Oswald";
-  background-color: rgb(8, 42, 58);
+  background-color: black;
 }
 
-body {
-  margin: 30px auto;
-  padding: 0 20px 20px 20px;
-  width: 800px;
+div {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 40px;
   text-align: center;
-  background-color: #e7c2ff;
-  border: 5px solid white;
-  border-radius: 25px;
-  color: blueviolet;
-}
 
-h1 {
-  font-size: 60px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  text-shadow: 3px 3px 1px pink;
-}
-
-p,
-ol {
-  font-size: 20px;
-  text-align: center;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-.done {
-  color: rgb(192, 45, 121);
-  text-decoration: line-through solid darkred 2px;
+  font-family: "Libre Baskerville", serif;
 }
 
 img {
-  display: block;
-  padding: 0 20px 20px 20px;
-  margin: 0 auto;
-  max-width: 80%;
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
 }

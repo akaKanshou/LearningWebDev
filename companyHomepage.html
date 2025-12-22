@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/companyHomePage.css" />
+		<title>Document</title>
+	</head>
+	<body class="funnel-display-thin">
+		<nav
+			class="navbar funnel-display-normal fixed-top navbar-expand-lg bg-body-tertiary"
+			data-bs-theme="dark"
+		>
+			<div class="container-fluid">
+				<a
+					class="navbar-brand funnel-display-bold"
+					href="./companyHomepage.html"
+					><img
+						src="images/book.png"
+						alt="book icon"
+						style="display: inline-block; height: 1.5rem; margin-right: 0.5rem"
+					/>akaRental</a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="./index.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="?toldyou">Useless Button</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="?whatdidyouexpect"
+										>Another Useless Button</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="?sike">Useful Button</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-mine" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="heading container funnel-display-bold">
+			<div class="row">
+				<p id="headingheading" class="text-center col-12">Any Book, Anytime</p>
+			</div>
+
+			<div class="row">
+				<div id="headingimgcontainer" class="col-12 justify-content-sm-center">
+					<img src="images/library.jpeg" alt="library" />
+				</div>
+			</div>
+
+			<div class="row">
+				<p id="headingtext" class="col-12">
+					Rent books at a discounted price, and get them delivered to your
+					doorstep in less than a week. The most convenient service for any book
+					lover out there. Satisfaction guaranteed prolly.
+				</p>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="px-4 py-5 my-5 text-center">
+			<img
+				class="d-block mx-auto mb-4"
+				src="images/library.jpeg"
+				alt="library"
+				width="400"
+				height="auto"
+				style="border-radius: 10%"
+			/>
+			<h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+			<div class="col-lg-6 mx-auto">
+				<p class="lead mb-4">
+					Quickly design and customize responsive mobile-first sites with
+					Bootstrap, the world’s most popular front-end open source toolkit,
+					featuring Sass variables and mixins, responsive grid system, extensive
+					prebuilt components, and powerful JavaScript plugins.
+				</p>
+				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+					<button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+						Primary button
+					</button>
+					<button type="button" class="btn btn-outline-secondary btn-lg px-4">
+						Secondary
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="container px-4 py-5" id="featured-3">
+			<h2 class="pb-2 border-bottom funnel-display-bold">Why akaRental?</h2>
+			<div class="row g-4 py-5 row-cols-1 row-cols-lg-3 funnel-display-normal">
+				<div class="feature col">
+					<div
+						class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="5rem"
+							height="5rem"
+							fill="currentColor"
+							class="bi bi-tree-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"
+							/>
+						</svg>
+					</div>
+					<h3
+						class="fs-2 text-body-emphasis"
+						style="color: aliceblue !important"
+					>
+						Eco-Friendly
+					</h3>
+					<p class="">
+						Renting and lending your books saves the environment, while keeping
+						all your bookshelves filled with the books you love!
+					</p>
+					<a id="calltoaction" href="#" class="icon-link">
+						Call to action
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-tree-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z"
+							/>
+						</svg>
+					</a>
+				</div>
+				<div class="feature col">
+					<div
+						class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+					>
+						<svg class="bi" width="1em" height="1em" aria-hidden="true">
+							<use xlink:href="#people-circle"></use>
+						</svg>
+					</div>
+					<h3 class="fs-2 text-body-emphasis">Featured title</h3>
+					<p class="">
+						Paragraph of text beneath the heading to explain the heading. We'll
+						add onto it with another sentence and probably just keep going until
+						we run out of words.
+					</p>
+					<a href="#" class="icon-link">
+						Call to action
+						<svg class="bi" aria-hidden="true">
+							<use xlink:href="#chevron-right"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="feature col">
+					<div
+						class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+					>
+						<svg class="bi" width="1em" height="1em" aria-hidden="true">
+							<use xlink:href="#toggles2"></use>
+						</svg>
+					</div>
+					<h3 class="fs-2 text-body-emphasis">Featured title</h3>
+					<p class="">
+						Paragraph of text beneath the heading to explain the heading. We'll
+						add onto it with another sentence and probably just keep going until
+						we run out of words.
+					</p>
+					<a href="#" class="icon-link">
+						Call to action
+						<svg class="bi" aria-hidden="true">
+							<use xlink:href="#chevron-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

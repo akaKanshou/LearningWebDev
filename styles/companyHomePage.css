@@ -1,0 +1,109 @@
+.funnel-display-bold {
+	font-family: "Funnel Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.funnel-display-normal {
+	font-family: "Funnel Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.funnel-display-light {
+	font-family: "Funnel Display", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.navbar-brand.funnel-display-bold {
+	color: aliceblue;
+	font-size: 1.5rem;
+}
+
+body {
+	background-color: #394046;
+	color: aliceblue;
+}
+
+.heading {
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	margin-top: 6rem;
+}
+
+#headingimgcontainer {
+	display: flex;
+}
+
+.heading img {
+	width: 50%;
+	height: auto;
+	border-radius: 5%;
+}
+
+#headingheading {
+	text-align: justify;
+	background-color: transparent;
+	font-size: 6rem;
+}
+
+#headingtext {
+	text-align: center;
+	font-size: 1.5rem;
+	color: rgba(240, 248, 255, 0.825);
+	padding-top: 0.75rem;
+}
+
+#midcontent {
+	background-color: aliceblue;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 4rem;
+}
+
+#midcontent .card {
+	background-color: aliceblue;
+	border: none;
+	text-align: center;
+}
+
+.divider {
+	width: 100%;
+	height: 2rem;
+	background-color: #0000001a;
+	border: solid rgba(0, 0, 0, 0.15);
+	border-width: 1px 0;
+	box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+}
+
+.feature.col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#featured-3 > div > div:nth-child(1) > div > svg {
+	background-color: #394046;
+}
+
+.btn-outline-mine {
+	-bs-btn-color: aliceblue;
+	--bs-btn-border-color: aliceblue;
+	--bs-btn-hover-color: #000;
+	--bs-btn-hover-bg: aliceblue;
+	--bs-btn-hover-border-color: aliceblue;
+	--bs-btn-focus-shadow-rgb: 13, 202, 240;
+	--bs-btn-active-color: #000;
+	--bs-btn-active-bg: aliceblue;
+	--bs-btn-active-border-color: #aliceblue;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: aliceblue;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: aliceblue;
+	--bs-gradient: none;
+}

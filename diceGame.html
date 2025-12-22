@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./styles/diceGame.css" />
+		<title>Dice Game</title>
+	</head>
+
+	<body>
+		<div class="container-lg">
+			<div class="row justify-content-center">
+				<h1 class="col-12 py-5">Refresh Page!</h1>
+			</div>
+			<div class="row justify-content-center gx-4">
+				<div class="card col-4" id="diceCardLeft">
+					<img
+						src="./images/dice-six-faces-1.png"
+						class="card-img-top"
+						alt="diceFace1"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Player 1</h5>
+					</div>
+				</div>
+
+				<div class="card col-4" id="diceCardRight">
+					<img
+						src="./images/dice-six-faces-1.png"
+						class="card-img-top"
+						alt="diceFace1"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Player 2</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./scripts/diceGame.js"></script>
+	</body>
+</html>

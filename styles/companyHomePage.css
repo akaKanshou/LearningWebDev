@@ -87,7 +87,9 @@ body {
 	align-items: center;
 }
 
-#featured-3 > div > div:nth-child(1) > div > svg {
+#featured-3 > div > div:nth-child(1) > div > svg,
+#featured-3 > div > div:nth-child(2) > div > svg,
+#featured-3 > div > div:nth-child(3) > div > svg {
 	background-color: #394046;
 }
 
@@ -106,4 +108,8 @@ body {
 	--bs-btn-disabled-bg: transparent;
 	--bs-btn-disabled-border-color: aliceblue;
 	--bs-gradient: none;
+}
+
+h3.text-body-emphasis {
+	color: aliceblue !important;
 }

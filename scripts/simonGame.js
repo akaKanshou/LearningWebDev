@@ -6,10 +6,11 @@ var colors = ["blue", "green", "red", "yellow"];
 // setting up environment
 
 const audioRack = {
-    blue: new Audio("./sounds/blue.mp3"), 
-    green: new Audio("./sounds/green.mp3"), 
-    red: new Audio("./sounds/red.mp3"), 
-    yellow : new Audio("./sounds/yellow.mp3")
+    blue: new Audio("./sounds/blue.mp3"),
+    green: new Audio("./sounds/green.mp3"),
+    red: new Audio("./sounds/red.mp3"),
+    yellow: new Audio("./sounds/yellow.mp3"),
+    wrong: new Audio("./sounds/wrong.mp3")
 }
 
 const pressAnimationTimeoutHandler = (element) => {
@@ -29,7 +30,7 @@ function startLevel() {
 
     let next = Math.floor(Math.random() * 4);
     list.push(next);
-    
+
     // console.log(list);
 
     $(".".concat(colors[next])).addClass("pressed");
@@ -39,6 +40,13 @@ function startLevel() {
 }
 
 function levelFailed() {
+    audioRack["wrong"].play()
+
+    $("body").addClass("game-over");
+    setTimeout(() => {
+        $("body").removeClass("game-over");
+    }, 350);
+
     list = [];
     $("h1").text("Game Over, Press Any Key to Restart");
     gameStarted = false;
@@ -46,7 +54,7 @@ function levelFailed() {
 
 $(document).keypress(function (event) {
     if (gameStarted) return;
-    
+
     gameStarted = true;
     startLevel();
 });
@@ -62,7 +70,7 @@ $(".btn").click(function (event) {
 
     // console.log(this.classList[1], colors[list[indexOfList]], indexOfList);
 
-    if (this.classList[1] === colors[list[indexOfList]]){
+    if (this.classList[1] === colors[list[indexOfList]]) {
         indexOfList++;
         if (indexOfList === list.length) setTimeout(startLevel, 500);
     }

@@ -1,0 +1,16 @@
+{
+  "name": "packagesforqrgen",
+  "version": "1.0.0",
+  "description": "packages required for qr generator",
+  "license": "ISC",
+  "author": "akaKanshou",
+  "type": "module",
+  "main": "qrGen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.1.0",
+    "qr-image": "^3.2.0"
+  }
+}

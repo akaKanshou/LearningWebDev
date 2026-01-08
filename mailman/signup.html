@@ -9,7 +9,7 @@
 			content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
 		/>
 		<meta name="generator" content="Astro v5.13.2" />
-		<title>Signin Template · Bootstrap v5.3</title>
+		<title>Sign Up</title>
 
 		<script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
 		<link
@@ -48,7 +48,7 @@
 			href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico"
 		/>
 		<meta name="theme-color" content="#712cf9" />
-		<link href="signup.css" rel="stylesheet" />
+		<link href="css/signup.css" rel="stylesheet" />
 
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -129,10 +129,19 @@
 			.bd-mode-toggle .dropdown-menu .active .bi {
 				display: block !important;
 			}
+			.cls-1 {
+				fill: #f2555f;
+			}
 		</style>
 	</head>
 	<body class="d-flex align-items-center py-4 bg-body-tertiary">
 		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+			<symbol id="Layer_1" viewBox="0 0 122.88 85.57">
+				<path
+					class="cls-1"
+					d="M3.8,0,62.48,47.85,118.65,0ZM0,80.52,41.8,38.61,0,4.53v76ZM46.41,42.37,3.31,85.57h115.9L78,42.37,64.45,53.94h0a3,3,0,0,1-3.79.05L46.41,42.37Zm36.12-3.84,40.35,42.33V4.16L82.53,38.53Z"
+				/>
+			</symbol>
 			<symbol id="check2" viewBox="0 0 16 16">
 				<path
 					d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
@@ -228,48 +237,47 @@
 			</ul>
 		</div>
 		<main class="form-signin w-100 m-auto">
-			<form>
-				<img
-					class="mb-4"
-					src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
-					alt=""
-					width="72"
-					height="57"
-				/>
-				<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+			<form action="/signup" method="post">
+				<div class="row justify-content-center">
+					<svg id="mail" aria-hidden="true" height="5rem" class="my-3">
+						<use href="#Layer_1"></use>
+					</svg>
+				</div>
+
+				<h1 class="h3 mb-3 fw-normal" style="text-align: center">Sign Up</h1>
+				<div class="form-floating">
+					<input
+						type="text"
+						class="form-control"
+						id="floatingInputFirst"
+						placeholder="First Name"
+						name="fname"
+					/>
+					<label for="floatingInputFirst">First Name</label>
+				</div>
+				<div class="form-floating">
+					<input
+						type="text"
+						class="form-control"
+						id="floatingInputLast"
+						placeholder="Last Name"
+						name="lname"
+					/>
+					<label for="floatingInputLast">Last Name</label>
+				</div>
 				<div class="form-floating">
 					<input
 						type="email"
 						class="form-control"
-						id="floatingInput"
-						placeholder="name@example.com"
+						id="floatingEmail"
+						placeholder="firstlastname@example.com"
+						name="email"
 					/>
-					<label for="floatingInput">Email address</label>
+					<label for="floatingEmail">Email Address</label>
 				</div>
-				<div class="form-floating">
-					<input
-						type="password"
-						class="form-control"
-						id="floatingPassword"
-						placeholder="Password"
-					/>
-					<label for="floatingPassword">Password</label>
-				</div>
-				<div class="form-check text-start my-3">
-					<input
-						class="form-check-input"
-						type="checkbox"
-						value="remember-me"
-						id="checkDefault"
-					/>
-					<label class="form-check-label" for="checkDefault">
-						Remember me
-					</label>
-				</div>
-				<button class="btn btn-primary w-100 py-2" type="submit">
-					Sign in
+				<button class="btn btn-primary w-100 py-2 mt-2" type="submit">
+					Sign Up
 				</button>
-				<p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2025</p>
 			</form>
 		</main>
 

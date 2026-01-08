@@ -12,14 +12,25 @@ body {
 	z-index: 2;
 }
 
-.form-signin input[type="email"] {
+#floatingInputFirst,
+#floatingInputLast {
 	margin-bottom: -1px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
+#floatingInputLast {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#floatingEmail {
 	margin-bottom: 10px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+}
+
+#mail {
+	width: auto;
+	height: fit-content !important;
 }
